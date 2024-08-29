@@ -15,4 +15,4 @@ EXPOSE 8080
 
 COPY --from=build /target/student-0.0.1-SNAPSHOT.jar app.jar
 
-ENTRYPOINT [ "java", "-jar", "app.jar", "-Dspring-boot.run.profiles=postgres" ]
+ENTRYPOINT [ "java", "-jar", "app.jar", "-Dspring-boot.run.profiles=prod" ]
